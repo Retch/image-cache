@@ -1,0 +1,10 @@
+services:
+  cache-1:
+    build: .
+    tty: true
+    environment:
+      - SOURCE_URL=http://source.url
+      - CACHE_NAME=cache-1
+      - MIN_CONTENT_BYTES=10240
+    ports:
+      - "5001:5000"
