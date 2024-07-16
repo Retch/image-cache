@@ -8,3 +8,4 @@ services:
       - MIN_CONTENT_BYTES=10240
     ports:
       - "5001:5000"
+    restart: unless-stopped
